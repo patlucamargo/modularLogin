@@ -3,53 +3,63 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#252525"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#484747"
-    android:orientation="vertical"
     tools:context=".view.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tela de Login"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:layout_marginTop="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText android:id="@+id/edit_email"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Informe seu email"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/white"
-        android:padding="16dp">
+        android:src="@drawable/download"
+        android:layout_marginTop="100dp"/>
 
-    </EditText>
-
-    <EditText android:id="@+id/edit_senha"
+    <EditText android:id="@+id/edt_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Informe sua senha"
-        android:layout_marginTop="50dp"
+        android:background="@color/white"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@color/white"
-        android:padding="16dp">
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:hint="Informe o email"/>
 
-    </EditText>
+    <EditText android:id="@+id/edt_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:hint="Informe a senha"/>
 
     <LinearLayout
-        android:layout_width=""
-        android:layout_height=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#373636"
+        android:layout_margin="20dp">
 
+        <Button android:id="@+id/btn_cadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Cadastrar"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="@color/white"
+            android:backgroundTint="#E91E63"/>
 
+        <Button android:id="@+id/btn_criar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Ja tenho cadastro"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="@color/white"
+            android:backgroundTint="#686667"/>
+
+    </LinearLayout>
 </LinearLayout>
